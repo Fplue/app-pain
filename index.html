@@ -6,31 +6,30 @@
     <title>Bread App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    
+    <script src="script.js"></script>
   
 
 
     
 </head>
 <body>
+    <h1>Pain aux noix de grenoble</h1>
 
-        Hours: <span id="hoursDisplay"></span>
-        <br><br>
-        <select id="select" name="options">
-            <option>Choose Your Option</option>
-            <option value="0"> 0</option>
-            <option value="1"> 1</option>
-            <option value="2"> 2</option>
-            <option value="3"> 3</option>
-            <option value="4"> 4</option>
-            <option value="5"> 5</option>
-            <option value="6"> 6</option>
-            <option value="7"> 7</option>
-            <option value="8"> 8</option>
-            <option value="9"> 9</option>
+        Heure:
+        <select id="hoursSelect" name="options">
+            <option value="0"> 00</option>
+            <option value="1"> 01</option>
+            <option value="2"> 02</option>
+            <option value="3"> 03</option>
+            <option value="4"> 04</option>
+            <option value="5"> 05</option>
+            <option value="6"> 06</option>
+            <option value="7"> 07</option>
+            <option value="8"> 08</option>
+            <option value="9"> 09</option>  
             <option value="10"> 10</option>
             <option value="11"> 11</option>
-            <option value="12"> 12</option>
+            <option value="12" selected> 12</option>
             <option value="13"> 13</option>
             <option value="14"> 14</option> 
             <option value="15"> 15</option>
@@ -43,15 +42,79 @@
             <option value="22"> 22</option>
             <option value="23"> 23</option>
             <option value="24"> 24</option>
-
-            Minutes: <span id="minutesDisplay"></span>
-            <br><br>
-            <select id="select" name="options">          
-
-            Hours Step1: <span id="hoursStep1"></span>
         </select>
+        
+            <select id="minutesSelect" name="options">          
+                <option value="0"> 00</option>
+                <option value="5"> 05</option>
+                <option value="10"> 10</option>
+                <option value="15"> 15</option>
+                <option value="20"> 20</option>
+                <option value="25"> 25</option>
+                <option value="30"> 30</option>
+                <option value="35"> 35</option>
+                <option value="40"> 40</option>
+                <option value="45"> 45</option>
+                <option value="50"> 50</option>
+                <option value="55"> 55</option>
+            </select>
+            <button onclick="showSelectedHour()">Start Bread</button> 
+        
+            <h2 id=step1></h2>
+            <ul>
+                <li>Griller 12 minutes les noix (400F)</li>
+                <li>Mélanger 740g de farine blanche + 60g de farine de blé</li>
+                <li>Ajouter 620g d'eau (90-95F)</li>
+                <li>Laisser reposer (20min)</li>
+            </ul>
 
-        <script src="script.js"></script>
+            <h2 id=step2></h2>
+            <ul>
+                <li>Saupoudrer 23g de sel + 2g de levure + 360g de levain</li>
+                <li>mixer et "fold" jusqu'à 78F</li>
+                <li>Reposer (10min)</li>
+            </ul>
+        
+            <h2 id=step3></h2>
+            <ul>
+                <li>Incorporer les noix et mixer</li>
+            </ul>
+
+            <h2 id=step4></h2>
+            <ul>
+                <li>Plier</li>
+            </ul>
+
+            <h2 id=step5></h2>
+            <ul>
+                <li>Plier</li>
+            </ul>
+
+            <h2 id=step6></h2>
+            <ul>
+                <li>Plier</li>
+            </ul>
+
+            <h2 id=step7></h2>
+            <ul>
+                <li>Diviser et mettre dans les paniers</li>
+            </ul>
+
+            <h2 id=step8></h2>
+            <ul>
+                <li>Préchauffer le four (445F)</li>
+            </ul>
+
+            <h2 id=step9></h2>
+            <ul>
+                <li>Cuire 25 min couvert</li>
+            </ul>
+
+            <h2 id=step10></h2>
+            <ul>
+                <li>Sortir du four et laisser reposer 15 min</li>
+            </ul>
+        
 
     
 </body>
