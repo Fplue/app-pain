@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bread App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="script.js"></script>
   
@@ -14,7 +15,7 @@
 </head>
 <body>
     <h1>Pain aux noix de grenoble</h1>
-
+<div id=selector>
         Heure:
         <select id="hoursSelect" name="options">
             <option value="0"> 00</option>
@@ -58,8 +59,14 @@
                 <option value="50"> 50</option>
                 <option value="55"> 55</option>
             </select>
-            <button onclick="showSelectedHour()">Start Bread</button> 
-        
+            <p id=goButton>
+            <button class=button onclick="showSelectedHour();showRecipe()">PAIN!!!</button> 
+            </p>
+        </div>
+
+        <div id=recipe>
+
+        <div class="stepsOdd">
             <h2 id=step1></h2>
             <ul>
                 <li>Griller 12 minutes les noix (400F)</li>
@@ -67,55 +74,74 @@
                 <li>Ajouter 620g d'eau (90-95F)</li>
                 <li>Laisser reposer (20min)</li>
             </ul>
+        </div>
 
+        <div class="stepsEven">
             <h2 id=step2></h2>
             <ul>
                 <li>Saupoudrer 23g de sel + 2g de levure + 360g de levain</li>
                 <li>mixer et "fold" jusqu'à 78F</li>
                 <li>Reposer (10min)</li>
             </ul>
-        
+        </div>
+
+        <div class="stepsOdd">
             <h2 id=step3></h2>
             <ul>
                 <li>Incorporer les noix et mixer</li>
             </ul>
-
+        </div>
+        
+        <div class="stepsEven">
             <h2 id=step4></h2>
             <ul>
                 <li>Plier</li>
             </ul>
+        </div>
 
+        <div class="stepsOdd">
             <h2 id=step5></h2>
             <ul>
                 <li>Plier</li>
             </ul>
+        </div>
 
+        <div class="stepsEven">
             <h2 id=step6></h2>
             <ul>
                 <li>Plier</li>
             </ul>
+        </div>
 
+        <div class="stepsOdd">
             <h2 id=step7></h2>
             <ul>
                 <li>Diviser et mettre dans les paniers</li>
             </ul>
+        </div>
 
+        <div class="stepsEven">
             <h2 id=step8></h2>
             <ul>
                 <li>Préchauffer le four (445F)</li>
             </ul>
+        </div>
 
+        <div class="stepsOdd">
             <h2 id=step9></h2>
             <ul>
                 <li>Cuire 25 min couvert</li>
             </ul>
+        </div>
 
+        <div class="stepsEven">
             <h2 id=step10></h2>
             <ul>
                 <li>Sortir du four et laisser reposer 15 min</li>
             </ul>
-        
+        </div>
 
+        </div>
     
 </body>
 

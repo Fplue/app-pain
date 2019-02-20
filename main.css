@@ -1,9 +1,80 @@
+body {
+    font-family: arial;
+    background: rgb(55, 169, 207);
 
+}
 
-h2 {
-    padding-top:50px;
+#selector {
+    font-size: 20pt;
+    color: white;
+    font-weight: 800;
+    text-align: center;
 }
 
 ul {
-    font: arial;    
+    list-style-type: circle;
+    margin-left: 10pt;
+}
+
+h1 {
+    background: rgb(55, 169, 207);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+ul {
+    line-height: 20pt;
+    font: arial;
+    padding: 20px;
+}
+
+#recipe {
+    display: none;
+}
+
+.stepsOdd {
+    max-width: 80%;
+    margin: 30px auto;
+    background: rgb(197, 238, 250);
+    border-radius: 25px;
+}
+
+.stepsEven {
+
+    max-width: 80%;
+    margin: 30px auto;
+    background: rgb(212, 244, 255);
+    border-radius: 25px;
+}
+
+li {
+    margin: 20px 0
+}
+
+.button {
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: blue;
+    font-weight: 800;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#goButton {
+    padding: 30px;
 }

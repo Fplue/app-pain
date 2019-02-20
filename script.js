@@ -1,3 +1,10 @@
+function showRecipe(){
+    let x = document.getElementById("recipe");
+    x.style.display = "block";
+    let elmnt = document.getElementById("step1");
+    elmnt.scrollIntoView(); 
+}
+
 function showSelectedHour() {
     let hours = document.getElementById("hoursSelect").value;
     let minutes = document.getElementById("minutesSelect").value;
